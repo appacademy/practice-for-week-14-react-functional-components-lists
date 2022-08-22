@@ -1,10 +1,12 @@
-import './BaseStats.css';
+import "./BaseStats.css";
+import PokeMoves from "./PokeMoves.js";
 
 const BaseStats = ({ clicker, stats: { hp, attack, defense, speed } }) => {
   return (
-    <div className='stats'>
+    <div className="stats">
       <h1>BaseStats</h1>
-      <div className='base-stats'>
+      <PokeMoves />
+      <div className="base-stats">
         <table>
           <tbody>
             <tr>
@@ -26,8 +28,8 @@ const BaseStats = ({ clicker, stats: { hp, attack, defense, speed } }) => {
           </tbody>
         </table>
       </div>
-      <button onClick={clicker} className='sp-stats'>
-          Check Special Stats
+      <button onClick={clicker} className="sp-stats">
+        Check Special Stats
       </button>
     </div>
   );
